@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:id="@+id/tv_price_text"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Тур"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/gray"
+        />
+
+    <TextView
+        android:id="@+id/tv_tour_price"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Вылет из"
+        app:layout_constraintTop_toTopOf="@id/tv_price_text"
+        app:layout_constraintStart_toEndOf="@id/tv_price_text"
+        android:layout_marginStart="30dp"
+        android:textColor="@color/black"
+
+        />
+
+
+    <TextView
+        android:id="@+id/tv_fuel_text"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Топливный сбор"
+        app:layout_constraintTop_toBottomOf="@id/tv_tour_price"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/gray"
+        />
+
+    <TextView
+        android:id="@+id/tv_fuel_charge"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Вылет из"
+        app:layout_constraintTop_toTopOf="@id/tv_fuel_text"
+        app:layout_constraintStart_toEndOf="@id/tv_fuel_text"
+        android:layout_marginStart="30dp"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/tv_service_text"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Сервисный сбор"
+        app:layout_constraintTop_toBottomOf="@id/tv_fuel_text"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/gray"
+        />
+
+    <TextView
+        android:id="@+id/tv_service_charge"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Вылет из"
+        app:layout_constraintTop_toTopOf="@id/tv_service_text"
+        app:layout_constraintStart_toEndOf="@id/tv_service_text"
+        android:layout_marginStart="30dp"
+        android:textColor="@color/black"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_total_price_text"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="К оплате"
+        app:layout_constraintTop_toBottomOf="@id/tv_service_charge"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/gray"
+        />
+
+    <TextView
+        android:id="@+id/tv_total_price"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Вылет из"
+        app:layout_constraintTop_toTopOf="@id/tv_total_price_text"
+        app:layout_constraintStart_toEndOf="@id/tv_total_price_text"
+        android:layout_marginStart="30dp"
+        android:textColor="@color/blue"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
